@@ -18,10 +18,11 @@
 .btn{
     background-color: #FD6E0A;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 18px 35px;
+    cursor: pointer;
 }
 
 
@@ -29,6 +30,9 @@
 
 header {
   background-color: #fff8f3;
+  background: url("./images/developer.png"), url("./images/header_bg.png"), #fff8f3;
+  background-repeat: no-repeat;
+  background-position: 50px 38px, bottom right;
   padding-top: 2%;
 }
 
@@ -57,4 +61,48 @@ nav .menu a{
     text-decoration: none;
     font-size: 25px;
     color: #474747;
+}
+
+
+#banner{
+    margin: 47px 3.5% 0 14.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#banner .banner-content{
+    max-width: 885px;
+}
+
+
+#banner .banner-content h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #474747;
+}
+
+#banner .banner-content h1{
+    font-size: 85px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+#banner .banner-content p{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 45px;
+    color: #757575;
+}
+
+#banner .banner-img img{
+    max-width: 585px;
+    vertical-align: middle;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
 }
