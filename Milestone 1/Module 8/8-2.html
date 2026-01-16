@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container>* {
+            background-color: burlywood;
+            border: 1px solid brown;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            gap: 25px;
+
+            grid-template-areas: 
+            "header header header header"
+            "nav main main sidebar"
+            "nav main main advertise"
+            "footer footer footer footer";
+        }
+
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #advertise{
+            grid-area: advertise;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Main article Area</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi temporibus dolores enim commodi
+                dolore ea molestias dolorem amet, totam labore quis reiciendis tempora suscipit maiores expedita
+                aliquid? Consequuntur laudantium ratione ducimus tempora voluptatibus error in cupiditate nulla omnis,
+                itaque accusantium vel porro ullam veritatis officiis harum, repellendus hic nisi. Dolor ipsa, nihil,
+                veritatis animi perspiciatis culpa cumque aliquam accusantium sunt obcaecati ab, quis deserunt cum ad
+                expedita? Ratione excepturi beatae facilis magni ipsa? Error quasi animi itaque corporis perferendis
+                dolorum? Iure, necessitatibus, omnis excepturi blanditiis odit amet enim quia mollitia dignissimos
+                tenetur, repudiandae quis nesciunt quasi nostrum quos voluptatibus et voluptas earum illum animi nisi
+                perspiciatis? Dolore perferendis officia debitis ab sint enim obcaecati ipsam facere architecto sunt?
+                Saepe expedita officia est corrupti enim quia veniam, odio quisquam? Dolor corrupti odio tempore
+                incidunt, perspiciatis libero, aut voluptas dolorum nemo itaque eius ut, labore sint eveniet quisquam!
+                Iste dignissimos cupiditate laboriosam enim possimus.</p>
+        </main>
+
+        <aside id="sidebar">
+            <h3>Sidebar</h3>
+        </aside>
+
+        <aside id="advertise">
+            <h3>Advertise</h3>
+        </aside>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
