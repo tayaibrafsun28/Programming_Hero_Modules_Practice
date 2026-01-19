@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin-left: 200px;
+            margin-top: 200px;
+        }
+
+        .container,
+        .inner {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            background-color: red;
+            transform: scale(2, 1);
+
+        }
+
+        .inner {
+            background-color: aqua;
+            /* transform: scale(0.5, 0.25); */
+            transform: rotate(45deg);
+        }
+
+        .inner:hover {
+            transform: rotate(60deg) scale(0.5) translate(50px, 50px);
+        }
+    </style>
 </head>
+
 <body>
-    
+
+
+    <!-- Transform -->
+
+    <div class="container">
+        <div class="inner">
+
+        </div>
+    </div>
 </body>
+
 </html>
