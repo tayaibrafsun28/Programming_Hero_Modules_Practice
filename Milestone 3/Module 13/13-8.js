@@ -9,3 +9,4 @@ var total = str_to_num_2 + str_to_num_3
 console.log(total)
 console.log(total.toFixed(2)) // this defines how many digits will be shown after point
 
+ 
