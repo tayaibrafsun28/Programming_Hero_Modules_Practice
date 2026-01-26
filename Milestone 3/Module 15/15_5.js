@@ -18,3 +18,13 @@ console.log('Odd Numbers : ');
 for(let i=1; i<=10; i+=2){
     console.log(i);
 }
+
+// sum of numbers from 1 - 20 that are divisible by 3
+
+let sum = 0;
+for (let i = 1; i <=20; i++) {
+    if (i%3==0) {
+        sum+=i;    
+    }
+}
+console.log('Sum = ',sum);
