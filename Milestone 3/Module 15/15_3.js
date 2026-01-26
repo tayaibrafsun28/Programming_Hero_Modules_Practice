@@ -1,7 +1,7 @@
 let num = 0;
 let sum = 0;
 
-// While Loop
+// While Loop sum
 
 while (num <= 10){
     sum=sum+num;
