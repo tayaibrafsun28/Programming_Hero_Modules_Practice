@@ -31,5 +31,6 @@ console.log(friends2.join(" || ")); // This joins the elements of the array with
 // Find if an element is available in the string - INCLUDES
 
 const name3 = 'Neymar';
+console.log(name3.includes('x'));
 console.log(name3.includes('y'));
 
