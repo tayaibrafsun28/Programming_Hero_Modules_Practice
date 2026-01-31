@@ -18,3 +18,9 @@ console.log(bottle.unique.size);
 //Changing values of properties of object inside another object
 bottle.unique.colors[2] = 'Navy Blue'
 console.log(bottle.unique.colors)
+
+//Deleting a property of an object
+
+console.log(bottle);
+delete bottle.unique.reusable;
+console.log(bottle);
