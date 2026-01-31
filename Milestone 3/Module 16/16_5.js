@@ -6,3 +6,5 @@ const bottle = {
     color: 'White',
     isNewArrival: true
 }
+
+console.log(bottle);
