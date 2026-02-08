@@ -1,15 +1,18 @@
-// Problem - 01 
+// Problem - 02 
 
 function validOtp(otp) {
-    if(typeof(otp)==='string' && otp.startsWith("ph-")){
-        if(str.length===8){
+    if(typeof(otp)==="string"){
+        if(otp.length===8  && otp.startsWith("ph-")){
             return true;
         }
 
-        else return false;
+        else {
+            return false;
+        }
     }
 
-    else return ""
-
+    else {
+        return 'Invalid';
+    } 
 
 }

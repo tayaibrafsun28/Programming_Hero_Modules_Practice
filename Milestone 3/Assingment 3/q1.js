@@ -11,7 +11,5 @@ function newPrice(currentPrice , discount ) {
     }
 }
 
-const input = newPrice(1500, 20);
-console.log(input);
 
 
