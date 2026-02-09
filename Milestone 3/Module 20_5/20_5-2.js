@@ -10,7 +10,7 @@ const phones = [
 function matchPhones(phones, search){
     const match = [];
     for(const phone of phones){
-        if (phone.brand.includes(search)) {
+        if (phone.brand.toLowerCase().includes(search.toLowerCase())) {
             match.push(phone);
         }
     }
@@ -18,5 +18,5 @@ function matchPhones(phones, search){
     return match;
 };
 
-const match = matchPhones(phones, 'Xiaomi');
+const match = matchPhones(phones, 'xiaomi');
 console.log(match)
