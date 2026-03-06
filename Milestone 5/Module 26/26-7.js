@@ -1,3 +1,5 @@
+// Freeze and Seal
+
 const student = {name: 'Tayaib', id: 22201064, dept: 'CSE'};
 
 delete student.dept;
