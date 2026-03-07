@@ -7,7 +7,21 @@ const loadPost = () => {
 }
 
 const displayPost = (posts) => {
-    displayPost.forEach(post => {
-        console.log(post);
+
+    // get the container
+
+    const postContainer = document.getElementById('postContainer')
+
+    posts.forEach(post => {
+        console.log(post.title);
+
+    // create HTML element
+
+    const li = document.createElement("li");
+    li.innerText = post.title;
+
+    // add li in container
+
+    postContainer.appendChild(li);
     });
 }
