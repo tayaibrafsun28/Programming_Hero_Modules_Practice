@@ -1,7 +1,8 @@
 const student = {
     name: 'Tayaib', 
     id: 22201064, 
-    dept: 'CSE'
+    dept: 'CSE',
+    graduate: false,
 };
 
 console.log('Student: ',student, typeof student);
