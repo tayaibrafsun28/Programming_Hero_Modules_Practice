@@ -6,22 +6,34 @@ const loadPost = () => {
     });
 }
 
-const displayPost = (posts) => {
+const displayPost = (posts) =>{
 
-    // get the container
+    // Fetch post container and empty innerHTML
 
-    const postContainer = document.getElementById('postContainer')
+    const postContainer = document.getElementById('postContainer');
 
-    posts.forEach(post => {
-        console.log(post.title);
+    postContainer.innerHTML = "";
 
-    // create HTML element
 
-    const li = document.createElement("li");
-    li.innerText = post.title;
+    posts.forEach((post) => {
 
-    // add li in container
+        // create element
 
-    postContainer.appendChild(li);
+        const postCard = document.createElement("div");
+
+        postCard.innerHTML =`
+        
+        <div class="postCard">
+            <h2>${post.title}</h2>
+            <p>${post.body}</p>
+        </div>
+
+        `
+
+        // Append Child 
+        
+        postContainer.append(postCard);
+
     });
+
 }

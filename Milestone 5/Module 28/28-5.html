@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #postContainer {
+            max-width: 1080px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            row-gap: 40px;
+        }
+
+        .postCard {
+            border: 1px solid #ddd;
+            padding: 10px 30px;
+            border-radius: 10px;
+            height: 100%;
+
+        }
+
+        .postCard p {
+            text-align: justify;
+
+        }
+    </style>
 </head>
+
 <body>
 
     <button onclick="loadPost()">Load Data</button>
-    
-    <ul id="postContainer"></ul>
+
+    <div id="postContainer">
+        
+    </div>
+
     <script src="./28-5.js"></script>
 </body>
+
 </html>
