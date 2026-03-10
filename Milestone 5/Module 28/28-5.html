@@ -8,34 +8,28 @@
     <style>
         #postContainer {
             max-width: 1080px;
-            margin: 50px auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            row-gap: 40px;
+            gap: 50px;
+            margin: 50px auto;
         }
 
-        .postCard {
+        #postCard {
             border: 1px solid #ddd;
-            padding: 10px 30px;
-            border-radius: 10px;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px #ddd;
             height: 100%;
-
-        }
-
-        .postCard p {
-            text-align: justify;
-
         }
     </style>
 </head>
 
 <body>
 
-    <button onclick="loadPost()">Load Data</button>
+    <button onclick="loadPost()">Load Posts</button>
 
     <div id="postContainer">
-        
+
     </div>
 
     <script src="./28-5.js"></script>

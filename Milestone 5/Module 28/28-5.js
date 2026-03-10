@@ -1,39 +1,44 @@
-const loadPost = () => {
+const loadPost = () =>{
     fetch("https://jsonplaceholder.typicode.com/posts")
     .then(res => res.json())
-    .then(data => {
-        displayPost(data);
+    .then(data =>{
+        showPost(data);
     });
-}
+};
 
-const displayPost = (posts) =>{
+const showPost = (posts) =>{
+    posts.forEach(post => {
 
-    // Fetch post container and empty innerHTML
+        // Fetch data from postContainer
 
-    const postContainer = document.getElementById('postContainer');
+        const postContainer = document.getElementById('postContainer');
 
-    postContainer.innerHTML = "";
+        postContainer.innerHTML = "";
 
 
-    posts.forEach((post) => {
-
-        // create element
-
-        const postCard = document.createElement("div");
-
-        postCard.innerHTML =`
+        posts.forEach(post => {
         
-        <div class="postCard">
+        // Create post card div
+        
+        const postCard = document.createElement('div');
+
+        //set card inner html data
+
+        postCard.innerHTML = `
+        
+        <div id="postCard">
             <h2>${post.title}</h2>
             <p>${post.body}</p>
         </div>
 
         `
 
-        // Append Child 
-        
+        //Append child
+
         postContainer.append(postCard);
 
-    });
+        });
+        
 
+    });
 }
