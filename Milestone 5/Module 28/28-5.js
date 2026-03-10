@@ -7,7 +7,6 @@ const loadPost = () =>{
 };
 
 const showPost = (posts) =>{
-    posts.forEach(post => {
 
         // Fetch data from postContainer
 
@@ -39,6 +38,4 @@ const showPost = (posts) =>{
 
         });
         
-
-    });
 }
