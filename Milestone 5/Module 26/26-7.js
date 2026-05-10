@@ -13,3 +13,4 @@ Object.freeze(student);  // Doesn't allow modification, add or delete
 delete student.id;
 
 console.log(student);
+
