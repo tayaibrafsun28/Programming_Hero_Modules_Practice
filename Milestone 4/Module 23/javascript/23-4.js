@@ -26,3 +26,16 @@ document.getElementById('enter-btn').addEventListener('click', function(){
 
     updateName.innerText = userName;
 })
+
+
+document.getElementById('reset').addEventListener('click', function reset(){
+
+    const resetUser = document.getElementById('notLoggedIn')
+    resetUser.innerText = 'No User'
+
+    const resetNoName =  document.getElementById('no-name')
+    resetNoName.innerText = 'No name'
+
+    const resetEnterName =  document.getElementById('enter-name')
+    resetEnterName.value = ''
+})
