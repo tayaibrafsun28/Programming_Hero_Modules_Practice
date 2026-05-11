@@ -9,9 +9,13 @@
     <button id="make-green">Make Green</button>
 
     <script>
-        document.getElementById('make-green').addEventListener('click', function makeGreen() {
+
+        function makeGreen(){
             document.body.style.background = 'green'
-        })
+        }
+        
+        // document.getElementById().addEventListener('event type', handler) 
+        document.getElementById('make-green').addEventListener('click', makeGreen)
     </script>
 </body>
 </html>
