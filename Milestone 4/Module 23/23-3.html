@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <button id="make-green">Make Green</button>
+    <button id="make-reset">Make reset</button>
 
     <script>
 
-        function makeGreen(){
+        function makeGreen() {
             document.body.style.background = 'green'
         }
-        
+
         // document.getElementById().addEventListener('event type', handler) 
         document.getElementById('make-green').addEventListener('click', makeGreen)
+
+
+
+        // document.getElementById().addEventListener('event type', handler) 
+        document.getElementById('make-reset').addEventListener('click', function makeReset() {
+            document.body.style.background = ''
+        })
     </script>
 </body>
+
 </html>
