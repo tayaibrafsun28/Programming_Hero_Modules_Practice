@@ -1,23 +1,24 @@
 document.getElementById('submit-btn').addEventListener('click', function(){
+
+    // Step: 1 - Fetch comment from the textarea
     const comment = document.getElementById('comment');
 
     const commentText = comment.value;
 
-    const commentBox = document.createElement('div');
-
-    commentBox.classList.add('comments')
-
-    const newComment = document.createElement('p');
-
-    newComment.innerText = commentText;
+    // Step: 2 - Get the parent where to post comment
 
     const commentsContainer = document.getElementById('comments-container');
 
+    // Step: 3 - Creat p tag for the comment
 
 
-    commentsContainer.append(commentBox);
+    const newComment = document.createElement('p');
+    newComment.classList.add('comments')
+    newComment.innerText = commentText;
+    
+    // Step: 4 - Append child to parent
 
-    commentBox.append(newComment);
+    commentsContainer.append(newComment);
 
     comment.value='';
 })
