@@ -20,5 +20,7 @@ document.getElementById('submit-btn').addEventListener('click', function(){
 
     commentsContainer.append(newComment);
 
+    // Step: 5 - Clear text area
+    
     comment.value='';
 })
