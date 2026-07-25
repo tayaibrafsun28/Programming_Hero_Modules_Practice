@@ -12,5 +12,7 @@ const newName = 'Dhaka_'+name; //This is valid to use the variable in different 
 let price = 120;
 price = 150; // In let, we can reuse, redeclare, reassign a variable
 
+console.log(name);
+console.log(newName);
 console.log(price);
 
