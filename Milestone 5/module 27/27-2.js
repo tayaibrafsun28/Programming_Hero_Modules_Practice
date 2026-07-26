@@ -1,4 +1,4 @@
-// Unfined input and NaN output
+// Undefined input and NaN output
 
 function sum(a, b) {
     return a+b;
