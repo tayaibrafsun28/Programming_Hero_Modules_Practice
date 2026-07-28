@@ -12,7 +12,7 @@ const showPost = (posts) =>{
 
         const postContainer = document.getElementById('postContainer');
 
-        postContainer.innerHTML = "";
+        postContainer.innerHTML = ``;
 
 
         posts.forEach(post => {
