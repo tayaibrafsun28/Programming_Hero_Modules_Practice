@@ -26,6 +26,8 @@ const showPost = (posts) =>{
         postCard.innerHTML = `
         
         <div id="postCard">
+        
+            <h1>${post.id}</h2>
             <h2>${post.title}</h2>
             <p>${post.body}</p>
         </div>
